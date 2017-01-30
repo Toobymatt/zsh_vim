@@ -13,10 +13,24 @@
 # Command Line History (newest to oldest):
 :q
 :wq
+:w
+:tabedit product.h
+:'<,'>w
+:version
+:AirlineTheme
+:Airline
+:scriptnames
+:'<,'>q
+:NERDTree
+:.,.+232233455443220q
+:bd
+:x
+:be
+:bc
+:bp
 :help tagbar
 :helptags
 :helptas
-:w
 :Tagbar
 :TagbarToggle
 ::::q
@@ -26,7 +40,6 @@
 :tagbarToglge
 :tagbar
 :bn
-:NERDTree
 :NERDtree
 :cq
 :wq!
@@ -45,251 +58,144 @@
 	nmap <C-n> :bn<CR>
 ""1	CHAR	0
 	
+	" Configuration des touches vim
+	nmap <C-s> :w<CR>
+	nmap <C-q> :wq<CR>
+	
+"2	CHAR	0
+	
 	let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
 	let g:tagbar_width=26                          " Default is 40, seems too wide
 	noremap <silent> <Leader>y :TagbarToggle       " Display panel with y (or ,y)
 	
-"2	CHAR	0
+"3	CHAR	0
 	" Raccourcis tagbar
 	nmap <C-t> :TagbarToggle<CR>
-"3	CHAR	0
+"4	CHAR	0
 	
 	:syntastic_check_on_wq = 0
-"4	CHAR	0
+"5	CHAR	0
 	" Configuration de syntastic
 	let g:syntastic_always_populate_loc_list = 1
 	let g:syntastic_auto_loc_list = 1
 	let g:syntastic_check_on_open = 1
 	let g
-"5	CHAR	0
+"6	CHAR	0
 	set statusline+=%#warningmsg#
 	set statusline+=%{SyntasticStatuslineFlag()}
 	set statusline+=%*
 	
 	
-"6	CHAR	0
+"7	CHAR	0
 	" Désa
 	
-"7	CHAR	0
+"8	CHAR	0
 	syntax on
 	endif
-"8	LINE	0
-	" Suffixes à cacher
 "9	LINE	0
-	set suffixes=.jpg,.png,.jpeg,.gif,.bak,~,.swp,.swo,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,.pyc,.pyo
+	" Suffixes à cacher
 
 # File marks:
-'0  4  0  ~/NERD_tree_1
-'1  17  0  ~/NERD_tree_1
-'2  30  0  ~/NERD_tree_1
-'3  43  0  ~/NERD_tree_1
-'4  56  0  ~/NERD_tree_1
-'5  69  0  ~/NERD_tree_1
-'6  97  14  ~/NERD_tree_1
-'7  1  0  ~/NERD_tree_1
-'8  128  0  ~/NERD_tree_1
-'9  1  0  ~/.vimrc
+'0  19  6  ~/NERD_tree_1
+'1  27  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/product.h
+'2  15  60  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stock.h
+'4  6  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stock.h
+'5  1  1924  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/.brand.h.swp
+'6  19  45  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/adress.h
+'7  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/adress.h
+'8  17  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/store.h
+'9  27  5  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/brand.h
 
 # Jumplist (newest first):
--'  4  0  ~/NERD_tree_1
--'  14  0  ~/NERD_tree_1
--'  1  0  ~/NERD_tree_1
--'  1  0  ~/.zshrc
--'  17  0  ~/NERD_tree_1
--'  27  0  ~/NERD_tree_1
--'  30  0  ~/NERD_tree_1
--'  40  0  ~/NERD_tree_1
--'  43  0  ~/NERD_tree_1
--'  53  0  ~/NERD_tree_1
+-'  19  6  ~/NERD_tree_1
+-'  36  0  ~/NERD_tree_1
+-'  1  8  ~/NERD_tree_1
 -'  1  0  ~/.vimrc
--'  56  0  ~/NERD_tree_1
--'  66  0  ~/NERD_tree_1
--'  69  0  ~/NERD_tree_1
--'  79  0  ~/NERD_tree_1
--'  97  14  ~/NERD_tree_1
--'  119  0  ~/NERD_tree_1
--'  125  0  ~/NERD_tree_1
+-'  27  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/product.h
+-'  27  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/store.h
+-'  27  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/brand.h
+-'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/adress.h
+-'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stock.h
+-'  22  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stockRow.h
+-'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/product.h
+-'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/brand.h
+-'  5  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/store.h
+-'  12  25  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stockRow.h
+-'  18  14  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stockRow.h
+-'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stockRow.h
+-'  15  60  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stock.h
+-'  6  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stock.h
+-'  1  1924  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/.brand.h.swp
+-'  19  45  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/adress.h
+-'  17  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/store.h
+-'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/store.h
+-'  23  5  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/store.h
+-'  46  0  ~/NERD_tree_1
+-'  34  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/gestionStock/lieu.h
+-'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/gestionStock/lieu.h
+-'  49  0  ~/NERD_tree_1
+-'  59  0  ~/NERD_tree_1
+-'  14  0  ~/NERD_tree_15
+-'  1  0  ~/NERD_tree_15
+-'  18  39  ~/.vimrc
+-'  1  0  ~/Documents/Sites_MAMP/Alex_Optique/1-index.php
+-'  27  0  ~/Documents/Sites_MAMP/Alex_Optique/require/F1-object.php
+-'  21  0  ~/Documents/Sites_MAMP/Alex_Optique/require/F1-object.php
+-'  64  8  ~/.vimrc
+-'  49  0  ~/.vim/bundle/vim-airline/doc/airline.txt
+-'  1  0  ~/Documents/Sites_MAMP/Alex_Optique/require/F1-object.php
+-'  3  0  ~/Documents/Sites_MAMP/Alex_Optique/1-index.php
+-'  1  0  ~/.vim/bundle/vim-airline/doc/airline.txt
+-'  25  0  ~/.vimrc
+-'  13  0  ~/__Tagbar__.1
+-'  33  32  ~/.vimrc
+-'  14  0  ~/.vimrc
+-'  46  0  ~/.vimrc
+-'  1  0  ~/.zshrc
 -'  1  0  /private/etc/sudoers.tmp
--'  128  0  ~/NERD_tree_1
--'  137  0  ~/NERD_tree_1
--'  161  0  ~/NERD_tree_1
--'  171  0  ~/NERD_tree_1
--'  174  0  ~/NERD_tree_1
--'  184  0  ~/NERD_tree_1
--'  187  0  ~/NERD_tree_1
--'  188  0  ~/NERD_tree_1
--'  190  0  ~/NERD_tree_1
--'  199  0  ~/NERD_tree_1
--'  202  0  ~/NERD_tree_1
--'  211  0  ~/NERD_tree_1
--'  214  0  ~/NERD_tree_1
--'  223  0  ~/NERD_tree_1
--'  226  0  ~/NERD_tree_1
--'  235  0  ~/NERD_tree_1
 -'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/player/player.cpp
 -'  124  0  ~/.vim/bundle/tagbar/doc/tagbar.txt
 -'  1  0  ~/.vim/bundle/tagbar/doc/tagbar.txt
--'  269  0  ~/NERD_tree_1
 -'  37  0  ~/.vimrc
--'  280  0  ~/NERD_tree_1
--'  289  0  ~/NERD_tree_1
--'  300  0  ~/NERD_tree_1
--'  301  0  ~/NERD_tree_1
--'  1  0  ~/Documents/Sites_MAMP/Alex_Optique/1-index.php
--'  312  0  ~/NERD_tree_1
--'  329  0  ~/NERD_tree_1
--'  339  0  ~/NERD_tree_1
--'  356  0  ~/NERD_tree_1
--'  366  0  ~/NERD_tree_1
--'  383  0  ~/NERD_tree_1
--'  397  0  ~/NERD_tree_1
--'  414  0  ~/NERD_tree_1
--'  429  15  ~/NERD_tree_1
--'  445  0  ~/NERD_tree_1
--'  4  0  ~/NERD_tree_2
--'  13  0  ~/NERD_tree_2
--'  1  0  ~/NERD_tree_2
--'  8  0  ~/.vimrc
--'  50  0  ~/.vimrc
--'  31  23  ~/.vimrc
--'  52  18  ~/.vimrc
--'  30  13  ~/.vimrc
--'  62  0  ~/.vimrc
--'  57  25  ~/.vimrc
--'  48  37  ~/.vimrc
--'  54  27  ~/.vimrc
--'  27  0  ~/.vimrc
--'  47  12  ~/.vimrc
--'  51  35  ~/.vimrc
--'  43  0  ~/.vimrc
--'  40  10  ~/.vimrc
--'  74  0  ~/.vimrc
--'  91  8  ~/.vimrc
--'  14  0  ~/.vimrc
--'  13  14  ~/.vimrc
--'  1  0  ~/.viminfo
--'  1  0  /Users/admin/.viminfo
--'  1  0  /Users/admin/.viminfo
--'  1  0  ~/.viminfo
--'  1  0  /Users/admin/.viminfo
--'  1  0  /Users/admin/.viminfo
--'  1  0  ~/.viminfo
--'  1  0  /Users/admin/.viminfo
--'  1  0  /Users/admin/.viminfo
--'  1  0  ~/.viminfo
--'  1  0  /Users/admin/.viminfo
--'  1  0  /Users/admin/.viminfo
--'  1  0  ~/.viminfo
--'  1  0  /Users/admin/.viminfo
--'  1  0  /Users/admin/.viminfo
--'  1  0  ~/.viminfo
--'  1  0  /Users/admin/.viminfo
--'  1  0  /Users/admin/.viminfo
--'  1  0  ~/.viminfo
--'  84  14  ~/NERD_tree_1
+-'  27  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/product.h
+-'  27  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/store.h
+-'  27  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/brand.h
+-'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/adress.h
+-'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stock.h
+-'  22  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stockRow.h
+-'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/product.h
+-'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/brand.h
+-'  5  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/store.h
+-'  12  25  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stockRow.h
+-'  18  14  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stockRow.h
+-'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stockRow.h
+-'  15  60  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stock.h
+-'  6  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stock.h
+-'  1  1924  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/.brand.h.swp
+-'  19  45  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/adress.h
+-'  17  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/store.h
+-'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/store.h
+-'  23  5  ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/store.h
+-'  4  0  ~/NERD_tree_1
+-'  14  0  ~/NERD_tree_1
+-'  34  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/gestionStock/lieu.h
+-'  1  0  ~/Documents/Ingesup/Bachelor 1/POO/C++/gestionStock/lieu.h
+-'  17  0  ~/NERD_tree_1
+-'  27  0  ~/NERD_tree_1
+-'  14  0  ~/NERD_tree_15
+-'  1  0  ~/NERD_tree_15
+-'  27  0  ~/Documents/Sites_MAMP/Alex_Optique/require/F1-object.php
+-'  21  0  ~/Documents/Sites_MAMP/Alex_Optique/require/F1-object.php
+-'  49  0  ~/.vim/bundle/vim-airline/doc/airline.txt
+-'  1  0  ~/Documents/Sites_MAMP/Alex_Optique/require/F1-object.php
+-'  1  0  ~/.vim/bundle/vim-airline/doc/airline.txt
 
 # History of marks within files (newest to oldest):
 
-> ~/.zshrc
-	"	32	2
-	^	26	2
-	.	26	1
-	+	10	18
-	+	26	1
-
-> ~/NERD_tree_1
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
 > ~/.vimrc
-	"	73	23
-	^	73	24
-	.	73	23
-	+	7	16
-	+	13	14
-	+	7	0
-	+	8	0
-	+	1	0
-	+	8	27
-	+	9	0
-	+	74	5
-	+	15	0
-	+	91	0
-	+	74	0
-	+	74	0
-	+	37	0
-	+	36	24
-	+	40	11
+	"	64	25
+	^	64	26
+	.	64	25
 	+	44	0
 	+	43	0
 	+	55	8
@@ -320,7 +226,7 @@
 	+	55	7
 	+	55	8
 	+	55	7
-	+	74	0
+	+	78	0
 	+	54	28
 	+	48	6
 	+	47	0
@@ -339,32 +245,75 @@
 	+	1	24
 	+	61	0
 	+	60	32
-	+	64	43
-	+	63	37
-	+	67	18
-	+	68	18
-	+	69	30
-	+	69	0
-	+	74	0
-	+	74	0
-	+	69	14
-	+	74	0
-	+	69	76
-	+	74	0
-	+	72	78
-	+	73	23
+	+	67	43
+	+	66	37
+	+	70	18
+	+	71	18
+	+	73	30
+	+	73	0
+	+	78	0
+	+	78	0
+	+	73	14
+	+	78	0
+	+	73	76
+	+	78	0
+	+	76	78
+	+	77	23
+	+	70	8
+	+	71	8
+	+	77	8
+	+	70	6
+	+	71	6
+	+	77	6
+	+	69	40
+	+	72	17
+	+	61	27
+	+	60	15
+	+	62	0
+	+	64	8
+	+	70	8
+	+	71	8
+	+	72	8
+	+	77	8
+	+	64	8
+	+	70	8
+	+	71	8
+	+	72	8
+	+	77	8
+	+	64	8
+	+	70	8
+	+	71	8
+	+	72	8
+	+	77	8
+	+	59	18
+	+	59	18
+	+	59	0
+	+	59	0
+	+	60	0
+	+	10	1
+	+	70	6
+	+	71	6
+	+	72	6
+	+	77	6
+	+	64	25
 
-> ~/__Tagbar__.1
-	"	1	0
-	.	6	0
-	+	9	0
-	+	9	0
-	+	9	0
-	+	9	0
-	+	9	0
-	+	9	0
-	+	6	0
-	+	6	0
+> ~/NERD_tree_1
+	"	19	6
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 
 > ~/Documents/Sites_MAMP/Alex_Optique/1-index.php
 	"	1	0
@@ -374,8 +323,259 @@
 	+	44	0
 	+	13	18
 
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stockRow.h
+	"	22	0
+	^	15	48
+	.	15	48
+	+	22	6
+	+	19	18
+	+	12	47
+	+	12	2
+	+	19	18
+	+	20	0
+	+	14	56
+	+	15	8
+	+	11	6
+	+	14	6
+	+	15	29
+	+	12	47
+	+	15	48
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/stock.h
+	"	1	0
+	^	15	61
+	.	15	60
+	+	6	21
+	+	21	6
+	+	18	23
+	+	16	0
+	+	15	60
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/__Tagbar__.1
+	"	1	0
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/NERD_tree_2
+	"	8	8
+	^	8	9
+	.	1	0
+	+	1	0
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/adress.h
+	"	1	0
+	^	19	46
+	.	19	46
+	+	27	6
+	+	24	21
+	+	12	53
+	+	11	45
+	+	19	29
+	+	16	50
+	+	17	47
+	+	18	55
+	+	19	46
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/brand.h
+	"	27	0
+	^	27	6
+	.	23	21
+	+	1	17
+	+	2	17
+	+	25	1
+	+	12	1
+	+	11	0
+	+	21	8
+	+	20	0
+	+	23	0
+	+	14	48
+	+	15	45
+	+	18	2
+	+	17	33
+	+	18	48
+	+	15	0
+	+	23	19
+	+	25	2
+	+	27	6
+	+	23	14
+	+	5	17
+	+	7	16
+	+	18	14
+	+	17	27
+	+	23	21
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/store.h
+	"	27	0
+	^	19	28
+	.	19	27
+	+	27	5
+	+	25	0
+	+	25	2
+	+	22	9
+	+	24	23
+	+	25	0
+	+	16	58
+	+	5	16
+	+	6	0
+	+	7	17
+	+	19	0
+	+	19	0
+	+	19	46
+	+	21	0
+	+	8	17
+	+	19	26
+	+	20	29
+	+	19	27
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/product.h
+	"	27	0
+	^	26	0
+	.	19	41
+	+	1	19
+	+	27	6
+	+	21	9
+	+	10	11
+	+	24	14
+	+	12	36
+	+	20	0
+	+	19	41
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/NERD_tree_3
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/NERD_tree_1
+	"	9	8
+	^	79	9
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/gestionStock/stock.h
+	"	1	0
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/gestionStock/NERD_tree_1
+	"	10	8
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/gestionStock/concept_gestionStock.txt
+	"	2	0
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/gestionStock/lieu.h
+	"	1	0
+	^	2	16
+	.	2	15
+	+	1	15
+	+	2	15
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/gestionStock/product.h
+	"	3	0
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/gestionStock/vendeur.h
+	"	8	10
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/.stock.h.swp
+	"	1	0
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/ComInterObj/.brand.h.swp
+	"	1	1924
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/gestionStock/NERD_tree_4
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Ingesup/Bachelor 1/POO/C++/gestionStock/main.cpp
+	"	1	0
+
 > ~/Documents/Sites_MAMP/Alex_Optique/require/F1-object.php
-	"	26	44
+	"	27	0
+
+> ~/__Tagbar__.1
+	"	1	0
+	.	6	0
+	+	21	0
+	+	21	0
+	+	21	0
+	+	21	0
+	+	21	0
+	+	21	0
+	+	18	0
+	+	18	0
+	+	16	0
+	+	16	0
+	+	16	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	8	0
+	+	8	0
+	+	6	0
+	+	6	0
+	+	6	0
+
+> ~/NERD_tree_15
+	"	14	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/Sites_MAMP/Alex_Optique/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/bundle/vim-airline/doc/airline.txt
+	"	49	0
+
+> ~/.vim/bundle/vim-airline/doc/NERD_tree_3
+	"	3	6
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /usr/share/vim/vim74/doc/help.txt
+	"	1	0
+
+> ~/.zshrc
+	"	32	2
+	^	26	2
+	.	26	1
+	+	10	18
+	+	26	1
 
 > /private/etc/sudoers.tmp
 	"	26	30

@@ -7,7 +7,7 @@ set encoding=utf-8
 set nocompatible
 
 " Activer la sauvegarde
-set backup
+" set backup
 
 " un historique raisonnable
 set history=100
@@ -57,17 +57,21 @@ set  nu
 " Afficher ligne du curser
 set  cursorline
 
-" Lancer NERDTree automatiquement
+" Activation de NERDTree automatiquement
 autocmd vimenter * NERDTree
+
+" Raccourcis pour NERDTree
+nmap <S-a> :NERDTreeToggle<CR>
 
 " Activation de airline smart tab line
 let g:airline#extensions#tabline#enabled = 1
 
-" Raccourcis pour smart tab line
-nmap <C-n> :bn<CR>
-nmap <C-p> :bp<CR>
+" Raccourcis pour airline smart tab line
+nmap <S-n> :bn<CR>
+nmap <S-p> :bp<CR>
+nmap <S-d> :bd<CR>
 
 " Raccourcis et configuration pour tagbar
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
 let g:tagbar_width=26                          " Default is 40, seems too wide
-nmap <C-t> :TagbarToggle<CR>
+nmap <S-t> :TagbarToggle<CR>
